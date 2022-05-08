@@ -4,14 +4,22 @@ public class Cliente {
 
 	public static void main(String[] args) {
 		
-		Singleton myS = Singleton.getInstance("Valor 1");
-		Singleton myD = Singleton.getInstance("Valor 2");
+		Singleton myS = Singleton.getInstance("");
+		Singleton myD = Singleton.getInstance("");
+		Singleton myA = Singleton.getInstance("");
+		Singleton myF = Singleton.getInstance("");
 		
-		myS.setValue("Valor 1");
 		System.out.println(myS.getValue());
-		
-		myD.setValue("Valor 2");
 		System.out.println(myD.getValue());
+		
+		System.out.println("----");
+		
+		myS.setValue("Valor H");
+		System.out.println(myD.getValue());
+		System.out.println(myF.getValue());
+		
+//		myD.setValue("Valor 2");
+//		System.out.println(myD.getValue());
 		
 		// Qué imprime?
 		
